@@ -30,7 +30,7 @@ set hlsearch
 "显示标尺，就是在右下角显示光标位置
 set ruler
 
-"语法高亮
+"语法高亮  https://github.com/sickill/vim-monokai/tree/master/colors
 syntax on
 syntax enable
 colorscheme monokai
