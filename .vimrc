@@ -1,5 +1,7 @@
-"显示行号
+"显示行号 高亮行
 set nu
+set cursorline
+
 
 "tab缩进
 set tabstop=4
@@ -30,7 +32,7 @@ set hlsearch
 "显示标尺，就是在右下角显示光标位置
 set ruler
 
-"语法高亮  https://github.com/sickill/vim-monokai/tree/master/colors
+"语法高亮
 syntax on
 syntax enable
 colorscheme monokai
@@ -41,5 +43,11 @@ inoremap [ []<LEFT>
 inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
+
+" 同步系统剪切板
+set clipboard+=unnamed
+
+set mouse=a
+
 
 
