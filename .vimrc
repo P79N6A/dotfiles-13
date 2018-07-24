@@ -1,7 +1,5 @@
-"显示行号 高亮行
-set nu
-set cursorline
-
+set nu                              " 显示行号
+set cursorline                      " 高亮当前行
 
 set tabstop=4                       " tab缩进
 set shiftwidth=4                    " 默认缩进4个空格大小 
@@ -22,19 +20,18 @@ set confirm                         " 没有保存或文件只读时弹出确认
 
 set whichwrap=b,s,<,>,[,] "         " 设置单词的间隙字符
 
-set hlsearch  "高亮查找匹配
+set hlsearch                        " 高亮查找匹配
 
-
-set ruler     "显示标尺，就是在右下角显示光标位置
+set ruler                           " 显示标尺，就是在右下角显示光标位置
 
 "语法高亮
 syntax on
 syntax enable
 colorscheme monokai
 
-set clipboard+=unnamed  " 同步系统剪切板
+set clipboard+=unnamed              " 同步系统剪切板
 
-"set mouse=a        " 鼠标支持 
+"set mouse=a                        " 鼠标支持 
 
 
 
@@ -254,3 +251,4 @@ let g:airline_powerline_fonts = 1
  " 关闭状态显示空白符号计数,这个对我用处不大"
  let g:airline#extensions#whitespace#enabled = 0
  let g:airline#extensions#whitespace#symbol = '!'
+ 
