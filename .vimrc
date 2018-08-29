@@ -71,5 +71,4 @@ let g:airline#extensions#whitespace#symbol = '!'
 syntax on
 syntax enable
 colorscheme monokain
-set termguicolors
 set t_Co=256  " vim-monokain now only support 256 colours in terminal.
