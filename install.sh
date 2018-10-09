@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "install tmux vim zsh"
+sudo apt install tmux vim zsh
+
+echo "install oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 pwd=`pwd`
 names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc')
 
@@ -26,5 +32,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 echo "install autojump"
 sudo apt install autojump
+
+echo "install VundleVim"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "init ok, please try ssh again."
