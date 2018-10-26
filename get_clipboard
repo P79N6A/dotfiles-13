@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh liqiming.$USER@10.8.131.212 "cat ~/.clipboard"|pbcopy
