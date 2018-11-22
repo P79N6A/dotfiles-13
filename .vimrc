@@ -41,6 +41,7 @@ Plugin 'VundleVim/Vundle.vim'                   " let Vundle manage Vundle, requ
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 " Vundle Section End
