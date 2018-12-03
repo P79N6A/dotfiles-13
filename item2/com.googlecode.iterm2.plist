@@ -71,12 +71,18 @@
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>806 112 445 77 0 0 1440 900 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>1920 560 400 129 1440 -180 1920 1080 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>2090 336 620 392 1440 -180 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1864 -1 606 469 1440 -180 1920 1080 </string>
+	<string>269 132 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>284 293 918 452 0 0 1440 877 </string>
+	<string>1936 257 796 486 1440 -180 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 900 </string>
+	<string>1694 43 810 527 1440 -180 1920 1080 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>1750 -76 810 527 1440 -180 1920 1080 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -808,19 +814,24 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-10T09:10:34Z</date>
+	<date>2018-11-29T06:01:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>1</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Recent Directories</string>
+		<string>Captured Output</string>
+	</array>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.2.5</string>
+	<string>3.2.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
