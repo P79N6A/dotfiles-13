@@ -78,3 +78,6 @@ set t_Co=256  " vim-monokain now only support 256 colours in terminal.
 "git gutter
 "let g:gitgutter_realtime = 1
 set updatetime=500
+augroup filetype
+    autocmd! BufRead,BufNewFile BUILD set filetype=blade
+augroup end

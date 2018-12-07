@@ -1,0 +1,1 @@
+/bdata00/liqiming.icecory/blade/typhoon-blade/vim/ftdetect/blade.vim
