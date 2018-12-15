@@ -11,8 +11,11 @@ ColumnLimit:      100
 AccessModifierOffset: -4
 
 # short block
-AllowShortIfStatementsOnASingleLine: false
-AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
 
 # other
 AlwaysBreakTemplateDeclarations: true
