@@ -1,5 +1,5 @@
 pwd=`pwd`
-names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.gitconfig' '.clang-format')
+names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.clang-format')
 
 for x in ${names[@]}; do
     file=$HOME/$x
