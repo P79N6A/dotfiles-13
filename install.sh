@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-if [[ "$(uname)"=="Darwin" ]]
-then
+if [ "$(uname)" = "Darwin" ];then
+echo "Mac OS X system!"
 
+echo "start install"
 brew install mosh tmux autojumps rmtrash
 
-
-elif [[ "$(expr substr $(uname -s) 1 5)"=="Linux" ]]
-then
+elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ];then
+echo "Linux system!"
 
 sudo apt update && apt dist-upgrade && apt autoremove  
 
@@ -24,8 +24,10 @@ sudo sh get-docker.sh
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-
+else
+echo "unknown system"
 fi
+
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
