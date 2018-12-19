@@ -1,8 +1,8 @@
 pwd=`pwd`
-names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.gitconfig' '.clang-format' '.profile')
+names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.gitconfig' '.clang-format')
 
 for x in ${names[@]}; do
-    file=~/$x
+    file=$HOME/$x
     if [ -e $file ]; then
         read -p "$file exists. do you delete it? (y/n)? " answer
         if [ ! $answer ]; then answer='n'; fi
