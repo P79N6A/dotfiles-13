@@ -1,2 +1,2 @@
-echo kfj_ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
-echo mac_ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+cat kfj_ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+cat mac_ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
