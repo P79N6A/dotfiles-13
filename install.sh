@@ -16,7 +16,11 @@ sudo apt install python3 python-pip python3-pip virtualenv \
         language-pack-zh-hant-base language-pack-zh-hans-base \
         mosh tmux zsh autojump
 
-pip install --upgrade pip
+
+# sudo python -m pip uninstall pip && sudo apt install python-pip --reinstall
+# sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstall
+sudo pip2 install --upgrade pip
+sudo pip3 install --upgrade pip
 
 echo "start install docker"
 curl -fsSL get.docker.com -o get-docker.sh
