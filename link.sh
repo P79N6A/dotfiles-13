@@ -16,4 +16,7 @@ for x in ${names[@]}; do
     fi
 done
 
+
+ln -s $PWD/icecory.zsh-theme $ZSH/custom/themes/icecory.zsh-theme
+
 echo "link success!"
