@@ -96,4 +96,4 @@ add-zsh-hook precmd steeef_precmd
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 #PROMPT='${MARK} ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
-PROMPT=$'${ret_status} %{$purple%}%n(${MARK})%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} λ%{$reset_color%} '
+PROMPT=$'${ret_status}%{$purple%}%n(${MARK})%{$reset_color%} in %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} λ%{$reset_color%} '
