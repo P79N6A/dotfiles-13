@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 pwd=`pwd`
-names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.clang-format')
+names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.clang-format' '.gitignore_global')
 
 for x in ${names[@]}; do
     file=$HOME/$x

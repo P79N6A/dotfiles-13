@@ -4,7 +4,7 @@ if [ "$(uname)" = "Darwin" ];then
 echo "Mac OS X system!"
 
 echo "start install"
-brew install mosh tmux autojumps rmtrash
+brew install mosh tmux autojumps rmtrash ipython clang-format
 
 elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ];then
 echo "Linux system!"
