@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 pwd=`pwd`
 names=('.zshrc' '.tmux.conf' '.vimrc' '.vim' '.userrc' '.clang-format')
 
@@ -17,6 +19,6 @@ for x in ${names[@]}; do
 done
 
 
-ln -s $PWD/icecory.zsh-theme ${ZSH:~/.oh-my-zsh}/custom/themes/icecory.zsh-theme
+ln -s $PWD/icecory.zsh-theme $HOME/.oh-my-zsh/custom/themes/icecory.zsh-theme
 
 echo "link success!"

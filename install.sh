@@ -16,17 +16,15 @@ sudo apt install python3 python-pip python3-pip virtualenv \
         language-pack-zh-hant-base language-pack-zh-hans-base \
         mosh tmux zsh autojump
 
-
+# if pip error after upgrade
 # sudo python -m pip uninstall pip && sudo apt install python-pip --reinstall
 # sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstall
-sudo pip2 install --upgrade pip
-sudo pip3 install --upgrade pip
+sudo pip2 install --upgrade pip && pip3 install --upgrade pip
 
 echo "start install docker"
 curl -fsSL get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo sh get-docker.sh && groupadd docker && usermod -aG docker $USER
+sudo rm get-docker.sh
 
 else
 echo "unknown system"
