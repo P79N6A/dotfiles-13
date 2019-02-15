@@ -1,0 +1,32 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"file_exclude_patterns":
+	[
+		"*.pyc"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".venv",
+		"__pycache__"
+	],
+	"font_face": "ubuntu mono",
+	"font_size": 18,
+	"http_proxy": "ip:8080",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"material_theme_accent_scrollbars": true,
+	"material_theme_bright_scrollbars": true,
+	"material_theme_compact_panel": true,
+	"soda_classic_tabs": true,
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

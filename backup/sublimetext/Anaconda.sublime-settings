@@ -1,0 +1,6 @@
+{
+	"pep8_ignore":["E309","E501"],
+	"python_interpreter": "python",
+    "swallow_startup_errors":true,
+
+}

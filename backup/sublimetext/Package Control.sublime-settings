@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"ARM Assembly",
+		"Codecs33",
+		"ConvertToUTF8",
+		"CSS3",
+		"Git",
+		"HexViewer",
+		"HTML-CSS-JS Prettify",
+		"Material Theme",
+		"Material Theme - Appbar",
+		"Material Theme - White Panels",
+		"Package Control",
+		"Seti_UI",
+		"SublimeREPL",
+		"SublimeTmpl",
+		"Theme - Flatland",
+		"View In Browser",
+		"x86 and x86_64 Assembly"
+	]
+}
