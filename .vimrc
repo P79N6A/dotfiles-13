@@ -2,8 +2,8 @@ set nu                              " 显示行号
 set cursorline                      " 高亮当前行
 
 set tabstop=4                       " tab缩进
-set shiftwidth=4                    " 默认缩进4个空格大小 
-set expandtab                       " 用空格键替换制表符 
+set shiftwidth=4                    " 默认缩进4个空格大小
+set expandtab                       " 用空格键替换制表符
 set autoindent                      " 自动缩进
 set smartindent                     " 智能缩进
 "set cindent                        " c文件自动缩进
@@ -26,7 +26,7 @@ set ruler                           " 显示标尺，就是在右下角显示光
 
 set clipboard+=unnamed              " 同步系统剪切板
 
-set mouse=a                         " 鼠标支持 
+set mouse=a                         " 鼠标支持
 
 
 
@@ -51,11 +51,11 @@ filetype plugin indent on
 set laststatus=2  "永远显示状态栏
 set t_Co=256      "在windows中用xshell连接打开vim可以显示色彩
 
-let g:airline_theme="luna" 
+let g:airline_theme="luna"
 
-"这个是安装字体后 必须设置此项" 
+"这个是安装字体后 必须设置此项"
 let g:airline_powerline_fonts = 1
- 
+
 "打开tabline功能,方便查看Buffer和切换，这个功能比较不错"
 "我还省去了minibufexpl插件，因为我习惯在1个Tab下用多个buffer"
 let g:airline#extensions#tabline#enabled = 1

@@ -1,41 +1,48 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" = "Darwin" ];then
+if [[ "$(uname)" = "Darwin" ]];then
+########################
+# Mac OS X Install !!! #
+########################
 echo "Mac OS X system!"
+brew install mosh tmux autojump rmtrash ipython clang-format
 
-echo "start install"
-brew install mosh tmux autojumps rmtrash ipython clang-format
 
-elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ];then
+
+elif [[ "$(expr substr $(uname -s) 1 5)" = "Linux" ]];then
+########################
+# Linux Install !!! #
+########################
 echo "Linux system!"
 
-sudo apt update && apt dist-upgrade && apt autoremove  
-
-sudo apt install python3 python-pip python3-pip virtualenv \
-        apache2 vim libapache2-mod-wsgi \
+sudo apt update \
+    && sudo apt dist-upgrade \
+    && sudo apt autoremove \
+    && sudo apt install mosh tmux zsh autojump vim \
+        python3 python-pip python3-pip virtualenv \
+        apache2  libapache2-mod-wsgi \
         language-pack-zh-hant-base language-pack-zh-hans-base \
-        mosh tmux zsh autojump
-
+    && sudo pip2 install --upgrade pip && sudo pip3 install --upgrade pip
 # if pip error after upgrade
 # sudo python -m pip uninstall pip && sudo apt install python-pip --reinstall
 # sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstall
-sudo pip2 install --upgrade pip && pip3 install --upgrade pip
 
 echo "start install docker"
-curl -fsSL get.docker.com -o get-docker.sh
-sudo sh get-docker.sh && groupadd docker && usermod -aG docker $USER
-sudo rm get-docker.sh
+sudo sh -c "$(curl -fsSL https://get.docker.com/)" \
+    && groupadd docker && usermod -aG docker ${USER}
 
 else
-echo "unknown system"
+echo "unknown system !!!"
 fi
 
 
+echo "install oh my zsh with (zsh-autosuggestion, zsh-syntax-highlighting)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cd $HOME/.oh-my-zsh/custom/plugins
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
+cd -
 
-echo "start link"
-./link.sh
-
-echo "start clone"
-./clone.sh
-
+echo "install VundleVim"
+git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git \
+        $HOME/.vim/bundle/Vundle.vim
