@@ -5,8 +5,7 @@ if [[ "$(uname)" = "Darwin" ]];then
 # Mac OS X Install !!! #
 ########################
 echo "Mac OS X system!"
-brew install mosh tmux autojump rmtrash ipython clang-format
-
+brew install mosh tmux rmtrash ipython clang-format bat peco
 
 
 elif [[ "$(expr substr $(uname -s) 1 5)" = "Linux" ]];then
@@ -18,7 +17,7 @@ echo "Linux system!"
 sudo apt update \
     && sudo apt dist-upgrade \
     && sudo apt autoremove \
-    && sudo apt install mosh tmux zsh autojump vim \
+    && sudo apt install mosh tmux zsh vim \
         python3 python-pip python3-pip virtualenv \
         apache2  libapache2-mod-wsgi \
         language-pack-zh-hant-base language-pack-zh-hans-base \
