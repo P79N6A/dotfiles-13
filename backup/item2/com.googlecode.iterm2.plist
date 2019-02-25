@@ -70,11 +70,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>771 175 445 103 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1864 -1 606 469 1440 -180 1920 1080 </string>
+	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>252 287 796 486 0 0 1440 900 </string>
+	<string>252 316 796 486 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>371 350 810 527 0 0 1440 900 </string>
+	<string>71 242 810 527 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -721,7 +721,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.45289102157360406</real>
+			<real>0.5702093908629442</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -753,7 +753,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F5B57963-5761-4DE6-8846-DEE76D11FC22</string>
 	<key>NoSyncLastTipTime</key>
-	<real>571838665.56992698</real>
+	<real>572673903.38140202</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -769,6 +769,15 @@
 		<string>0001</string>
 		<string>0002</string>
 		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -820,7 +829,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-06T00:52:29Z</date>
+	<date>2019-02-23T08:15:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
