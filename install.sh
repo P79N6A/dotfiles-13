@@ -37,10 +37,6 @@ fi
 
 echo "install oh my zsh with (zsh-autosuggestion, zsh-syntax-highlighting)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cd $HOME/.oh-my-zsh/custom/plugins
-git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git
-git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
-cd -
 
 echo "install VundleVim"
 git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git \

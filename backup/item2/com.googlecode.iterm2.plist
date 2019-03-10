@@ -69,12 +69,16 @@
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>771 175 445 103 0 0 1440 877 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>520 578 400 129 0 0 1440 900 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 126 606 469 0 0 1440 900 </string>
+	<string>1864 0 606 469 1440 -180 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>252 316 796 486 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>71 242 810 527 0 0 1440 900 </string>
+	<string>362 350 810 527 0 0 1440 900 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>176 70 810 527 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -748,12 +752,14 @@
 	</array>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>F5B57963-5761-4DE6-8846-DEE76D11FC22</string>
 	<key>NoSyncLastTipTime</key>
-	<real>572673903.38140202</real>
+	<real>573838562.98827398</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -778,6 +784,19 @@
 		<string>0010</string>
 		<string>0011</string>
 		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -819,7 +838,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/icecory/Desktop/shell-setting/backup/item2</string>
+	<string>/Users/icecory/shell-setting/backup/item2</string>
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -829,7 +848,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-23T08:15:39Z</date>
+	<date>2019-03-06T02:29:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
