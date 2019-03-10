@@ -1,12 +1,12 @@
-[submodule "/Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-syntax-highlighting"]
-	path = /Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-syntax-highlighting
+[submodule "backup/zsh-custom/plugins/zsh-autosuggestions"]
+	path = backup/zsh-custom/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "backup/zsh-custom/plugins/zsh-syntax-highlighting"]
+	path = backup/zsh-custom/plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
-[submodule "/Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-completions"]
-	path = /Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-completions
+[submodule "backup/zsh-custom/plugins/zsh-completions"]
+	path = backup/zsh-custom/plugins/zsh-completions
 	url = git@github.com:zsh-users/zsh-completions.git
-[submodule "/Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-blade"]
-	path = /Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-blade
+[submodule "backup/zsh-custom/plugins/zsh-blade"]
+	path = backup/zsh-custom/plugins/zsh-blade
 	url = git@github.com:icecory/zsh-blade.git
-[submodule "/Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-autosuggestions"]
-	path = /Users/icecory/shell-setting/backup/zsh-custom/plugins/zsh-autosuggestions
-	url = git://github.com/zsh-users/zsh-autosuggestions
