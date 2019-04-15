@@ -1,0 +1,20 @@
+{
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontSize": 22,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "all",
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "terminal.integrated.fontSize": 20,
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+    "editor.mouseWheelZoom": true,
+    "editor.fontWeight": "500",
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 0.9,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "workbench.iconTheme": "material-icon-theme"
+}

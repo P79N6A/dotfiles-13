@@ -1,0 +1,106 @@
+[
+    {
+        "key": "cmd+=",
+        "command": "-editor.unfold",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "cmd+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "cmd+k cmd+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.view.search",
+        "when": "!searchViewletVisible"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    }
+]
