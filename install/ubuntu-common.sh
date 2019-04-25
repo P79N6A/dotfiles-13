@@ -5,17 +5,14 @@ sudo apt purge rhythmbox* firefox* \
     gnome-sudoku gnome-mines gnome-mahjongg gnome-todo* \
     simple-scan aisleriot totem
 
-
-
 sudo apt update \
     && sudo apt -y dist-upgrade \
     && sudo apt -y autoremove \
     && sudo apt -y install git mosh tmux zsh vim curl \
         python3 python-pip python3-pip virtualenv \
         language-pack-zh-hant-base language-pack-zh-hans-base \
-        ipython ipython3
-
-
+        ipython ipython3 \
+        filezilla
 
 # pip
 sudo pip2 install --upgrade pip requests
