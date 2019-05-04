@@ -1,22 +1,25 @@
 {
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.fontSize": 20,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Dracula",
-    "terminal.integrated.fontSize": 20,
-    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
-    "terminal.integrated.fontWeight": "500",
-    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
-    "editor.mouseWheelZoom": true,
-    "editor.fontWeight": "500",
-    "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 1,
-    "window.title": "${activeEditorLong}${separator}${rootName}",
+
+    //theme and font
     "workbench.iconTheme": "vscode-great-icons",
+    "workbench.colorTheme": "Dracula",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+    "editor.fontWeight": "500",
+    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+    "terminal.integrated.fontWeight": "500",
+
+    "editor.mouseWheelZoom": true,
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 0.9,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
     "http.proxySupport": "on",
 
     // https://code.visualstudio.com/docs/languages/identifiers
@@ -27,5 +30,17 @@
     // shfmt
     "shellformat.path": "/snap/bin/shfmt",
     "shellformat.flag": "-i 4 -ln bash",
+
     "breadcrumbs.enabled": true,
+    "git.autofetch": false,
+    "window.menuBarVisibility": "default",
+    "clangd.path": "clangd-8",
+
+    // cmake
+    "cmake.buildDirectory": "${workspaceRoot}/cmake-build-debug",
+    "cmake.ctest.parallelJobs": 2,
+    "cmake.environment": {
+        "CMAKE_PREFIX_PATH": "/home/icecory/Cpp3rdlib/"
+    },
+    "cmake.configureOnOpen": true,
 }
