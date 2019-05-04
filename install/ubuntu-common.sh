@@ -8,7 +8,7 @@ sudo apt purge rhythmbox* firefox* \
 sudo apt update &&
     sudo apt -y dist-upgrade &&
     sudo apt -y autoremove &&
-    sudo apt -y install git mosh tmux zsh vim curl \
+    sudo apt -y install git mosh tmux zsh vim curl jq\
         python3 python-pip python3-pip virtualenv \
         ipython ipython3
 
@@ -22,8 +22,10 @@ sudo pip3 install --upgrade pip requests
 # sudo python -m pip uninstall pip && sudo apt install python-pip --reinstall
 # sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstall
 
-# zsh
+# oh-my-zsh
+# update: upgrade_oh_my_zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo chsh -s /bin/zsh
 
 # snap
 
