@@ -1,12 +1,12 @@
 {
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.fontSize": 22,
+    "editor.fontSize": 20,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Dracula",
     "terminal.integrated.fontSize": 20,
     "editor.fontFamily": "Ubuntu Mono derivative Powerline",
     "terminal.integrated.fontWeight": "500",
@@ -14,8 +14,18 @@
     "editor.mouseWheelZoom": true,
     "editor.fontWeight": "500",
     "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 0.9,
+    "window.zoomLevel": 1,
     "window.title": "${activeEditorLong}${separator}${rootName}",
-    "workbench.iconTheme": "material-icon-theme",
-    "http.proxySupport": "on"
+    "workbench.iconTheme": "vscode-great-icons",
+    "http.proxySupport": "on",
+
+    // https://code.visualstudio.com/docs/languages/identifiers
+    "files.associations": {
+        ".userrc": "shellscript"
+    },
+
+    // shfmt
+    "shellformat.path": "/snap/bin/shfmt",
+    "shellformat.flag": "-i 4 -ln bash",
+    "breadcrumbs.enabled": true,
 }
