@@ -1,12 +1,11 @@
-### tmux theme
+# tmux theme
 
-github: **git@github.com:jimeh/tmux-themepack.git**
+github: git@github.com:jimeh/tmux-themepack.git
+
 theme: double/cyan.tmuxtheme
 
+## config
 
+### ibus-rime
 
-### backup
-
-#### vscode
-link to `/Users/icecory/Library/Application Support/Code/User/`
-
+Use out of box: git@github.com:scomper/Rime.git
