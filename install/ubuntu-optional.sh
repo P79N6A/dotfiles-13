@@ -4,14 +4,15 @@ app=${1:-nothing}
 echo "Start install ${app}"
 
 if [[ ${app} == "docker" ]]; then
-    sudo sh -c "$(curl -fsSL https://get.docker.com/)" \
-        && sudo groupadd docker -f && sudo usermod -aG docker ${USER}
+    sudo sh -c "$(curl -fsSL https://get.docker.com/)" &&
+        sudo groupadd docker -f && sudo usermod -aG docker ${USER}
 
 elif [[ ${app} == "hexo" || ${app} == "node" ]]; then
     # https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-    sudo apt -y install nodejs npm
-    sudo npm install npm@latest  hexo-cli -g
+    sudo apt -y install nodejs
+    sudo apt -y install npm
+    sudo npm install npm@latest hexo-cli -g
     #if On npm install: Unhandled rejection Error: EACCES: permission denied
     # sudo chown -R $USER:$GROUP ~/.npm
     # sudo chown -R $USER:$GROUP ~/.config
@@ -43,6 +44,16 @@ elif [[ ${app} == "uget" ]]; then
 elif [[ ${app} == "apache2" ]]; then
     sudo apt -y install apache2 apache2-dev
 
+elif [[ ${app} == "rust" ]]; then
+    # https://www.rust-lang.org/tools/install
+    # 默认会安装在~/.cargo/bin目录下
+    curl https://sh.rustup.rs -sSf | sh
+
+elif [[ ${app} == "wireshark" ]]; then
+    sudo apt -y install wireshark
+    sudo usermod -a -G wireshark $USER
+    # sudo dpkg-reconfigure wireshark-common
+    # choice yes for without root
 else
     echo "Nothing to be install"
 fi
