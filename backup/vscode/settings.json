@@ -1,10 +1,14 @@
 {
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "editor.renderWhitespace": "all",
     "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0.9,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
 
     //theme and font
     "workbench.iconTheme": "vscode-great-icons",
@@ -15,12 +19,6 @@
     "terminal.integrated.fontSize": 20,
     "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
     "terminal.integrated.fontWeight": "500",
-
-    "editor.mouseWheelZoom": true,
-    "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 0.9,
-    "window.title": "${activeEditorLong}${separator}${rootName}",
-    "http.proxySupport": "on",
 
     // https://code.visualstudio.com/docs/languages/identifiers
     "files.associations": {
@@ -34,6 +32,8 @@
     "breadcrumbs.enabled": true,
     "git.autofetch": false,
     "window.menuBarVisibility": "default",
+
+    // clangd
     "clangd.path": "clangd-8",
 
     // cmake
@@ -43,4 +43,26 @@
         "CMAKE_PREFIX_PATH": "/home/icecory/Cpp3rdlib/"
     },
     "cmake.configureOnOpen": true,
+
+    // markdown
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
+
+    // python
+    "python.pythonPath": "python3",
+    "python.linting.flake8Args": [
+        "--max-line-length=100"
+    ],
+
+    // execlude file
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "extensions.ignoreRecommendations": false,
+    "http.proxyStrictSSL": false,
+    "http.proxySupport": "off",
+
+    //"C_Cpp.default.intelliSenseMode": "gcc-x64",
 }

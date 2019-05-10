@@ -575,5 +575,35 @@
     {
         "key": "alt+m",
         "command": "workbench.action.toggleMenuBar"
+    },
+    {
+        "key": "alt+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalFocus && terminalTextSelected"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.copySelection",
+        "when": "terminalFocus && terminalTextSelected"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "search.action.copyPath",
+        "when": "fileMatchOrFolderMatchFocus"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-search.action.copyPath",
+        "when": "fileMatchOrFolderMatchFocus"
     }
 ]
