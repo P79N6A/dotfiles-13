@@ -62,7 +62,7 @@ elif [[ ${app} == "netdata" ]]; then
 elif [[ ${app} == "code-server" ]]; then
     wget -qO- -t1 -T2 https://api.github.com/repos/codercom/code-server/releases/latest \
         | jq '.assets[] | .browser_download_url' | grep linux \
-        | xargs wget -P $HOME/.local/bin 
+        | xargs wget -P $HOME/.local/bin
 
 elif [[ ${app} == "qmmp" ]]; then
     sudo add-apt-repository ppa:forkotov02/ppa
@@ -87,7 +87,15 @@ elif [[ ${app} == "fcitx" ]]; then
     sudo apt -y remove fcitx-module-kimpanel
 
 elif [[ ${app} == "libreoffice" ]]; then
-    sudo apt -y libreoffice libreoffice-l10n-zh-cn
+    sudo apt -y install libreoffice libreoffice-l10n-zh-cn
+
+elif [[ ${app} == "go" ]]; then
+    # https://github.com/golang/go/wiki/Ubuntu
+    sudo apt -y install golang-1.12-go
+
+elif [[ ${app} == "qt5" ]]; then
+    # http://download.qt.io/archive/qt/5.12/5.12.3/
+    # https://mirrors.tuna.tsinghua.edu.cn/qt/archive/qt/5.12/5.12.3/
 
 else
     echo "Nothing to be install"

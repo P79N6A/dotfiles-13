@@ -10,7 +10,8 @@ sudo apt update &&
     sudo apt -y autoremove &&
     sudo apt -y install git mosh tmux zsh vim curl jq\
         python3 python-pip python3-pip virtualenv \
-        ipython ipython3
+        ipython ipython3 \
+        silversearcher-ag
 
 # language
 sudo apt install -y language-pack-zh-hant-base language-pack-zh-hans-base
@@ -27,11 +28,14 @@ sudo pip3 install --upgrade pip requests
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo chsh -s /bin/zsh
 
-# snap
-
-# https://github.com/peco/peco/releases
-sudo snap install shfmt peco
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+exec $HOME/.fzf/install
 
 # VundleVim
 git clone --depth=1 https://github.com/VundleVim/Vundle.vim.git \
     $HOME/.vim/bundle/Vundle.vim
+
+# snap
+# https://github.com/peco/peco/releases
+# sudo snap install shfmt peco

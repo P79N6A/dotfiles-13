@@ -605,5 +605,9 @@
         "key": "ctrl+alt+c",
         "command": "-search.action.copyPath",
         "when": "fileMatchOrFolderMatchFocus"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "revealInExplorer"
     }
 ]

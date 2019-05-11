@@ -1,48 +1,57 @@
 {
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
+    // For editer
+    "editor.cursorStyle":"line",
+    "editor.cursorWidth": 4,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.cursorStyle": "line",
+    "editor.renderWhitespace": "all",
+    "files.autoSave": "afterDelay",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "files.autoSave": "afterDelay",
-    "editor.mouseWheelZoom": true,
-    "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0.9,
-    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "editor.detectIndentation": false, // 关闭自动探测使用tab还是空格
+    "files.insertFinalNewline": true,
+    "editor.mouseWheelZoom": true, // 鼠标滚动调整字体大小
 
-    //theme and font
+    // For themes and font
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.colorTheme": "Dracula",
     "editor.fontSize": 20,
-    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
     "editor.fontWeight": "500",
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
     "terminal.integrated.fontSize": 20,
-    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
     "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+
+    // For proxy
+    "http.proxyStrictSSL": false,
+    "http.proxySupport": "on",
+
+    // For window show
+    "window.zoomLevel": 1,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "explorer.openEditors.visible": 0,
+    "window.menuBarVisibility": "default",
 
     // https://code.visualstudio.com/docs/languages/identifiers
     "files.associations": {
         ".userrc": "shellscript"
     },
 
-    // shfmt
+    // shell script
     "shellformat.path": "/snap/bin/shfmt",
     "shellformat.flag": "-i 4 -ln bash",
 
-    "breadcrumbs.enabled": true,
-    "git.autofetch": false,
-    "window.menuBarVisibility": "default",
-
-    // clangd
+    // c++
     "clangd.path": "clangd-8",
 
     // cmake
     "cmake.buildDirectory": "${workspaceRoot}/cmake-build-debug",
     "cmake.ctest.parallelJobs": 2,
+    "cmake.configureOnOpen": true,
     "cmake.environment": {
         "CMAKE_PREFIX_PATH": "/home/icecory/Cpp3rdlib/"
     },
-    "cmake.configureOnOpen": true,
 
     // markdown
     "[markdown]": {
@@ -51,18 +60,30 @@
     },
 
     // python
+    // use yapf for format
+    // use pylint for linting
+    // use microsoft python language server for code complete
     "python.pythonPath": "python3",
-    "python.linting.flake8Args": [
-        "--max-line-length=100"
-    ],
+    "python.jediEnabled": false,
+    "python.autoComplete.addBrackets": true,
+    "python.formatting.provider": "yapf",
+    "python.workspaceSymbols.enabled": false,
 
     // execlude file
     "files.exclude": {
         "**/__pycache__": true
     },
-    "extensions.ignoreRecommendations": false,
-    "http.proxyStrictSSL": false,
-    "http.proxySupport": "off",
 
-    //"C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    "terminal.integrated.shell.osx": "/usr/bin/zsh",
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "extensions.ignoreRecommendations": false,
+
+    "breadcrumbs.enabled": true, //编辑器上方有个导航栏
+    "git.autofetch": false,
 }
