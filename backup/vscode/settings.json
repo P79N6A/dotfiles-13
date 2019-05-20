@@ -16,7 +16,7 @@
     // For themes and font
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.colorTheme": "Dracula",
-    "editor.fontSize": 20,
+    "editor.fontSize": 22,
     "editor.fontWeight": "500",
     "editor.fontFamily": "Ubuntu Mono derivative Powerline",
     "terminal.integrated.fontSize": 20,
@@ -25,13 +25,14 @@
 
     // For proxy
     "http.proxyStrictSSL": false,
-    "http.proxySupport": "on",
+    "http.proxySupport": "off",
 
     // For window show
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 1.1,
     "window.title": "${activeEditorLong}${separator}${rootName}",
     "explorer.openEditors.visible": 0,
     "window.menuBarVisibility": "default",
+    "breadcrumbs.enabled": true, //编辑器上方有个导航栏
 
     // https://code.visualstudio.com/docs/languages/identifiers
     "files.associations": {
@@ -43,6 +44,13 @@
     "shellformat.flag": "-i 4 -ln bash",
 
     // c++
+    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "C_Cpp.clang_format_sortIncludes": true,
+    // "C_Cpp.intelliSenseEngine": "Disabled",
     "clangd.path": "clangd-8",
 
     // cmake
@@ -52,6 +60,8 @@
     "cmake.environment": {
         "CMAKE_PREFIX_PATH": "/home/icecory/Cpp3rdlib/"
     },
+    "cmake.autoRestartBuild": true,
+    "cmake.copyCompileCommands": "${workspaceRoot}/compile_commands.json",
 
     // markdown
     "[markdown]": {
@@ -66,24 +76,31 @@
     "python.pythonPath": "python3",
     "python.jediEnabled": false,
     "python.autoComplete.addBrackets": true,
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "autopep8",
+    "python.formatting.yapfArgs": [
+        "--style='{based_on_style: google, indent_width: 4}'"
+    ],
     "python.workspaceSymbols.enabled": false,
+
+    // leetcode
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.defaultLanguage": "cpp",
+
+    // git
+    "git.autofetch": false,
+
 
     // execlude file
     "files.exclude": {
         "**/__pycache__": true
     },
 
+    // others
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
     "terminal.integrated.shell.osx": "/usr/bin/zsh",
-
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-
-    "extensions.ignoreRecommendations": false,
-
-    "breadcrumbs.enabled": true, //编辑器上方有个导航栏
-    "git.autofetch": false,
+    "extensions.ignoreRecommendations": true,
+    "yaml.format.enable": true,
 }
