@@ -1,3 +1,9 @@
 [user]
 	name = iceCory
 	email = icecory520@gmail.com
+[http]
+	proxy = socks5://127.0.0.1:1080
+[https]
+	proxy = socks5://127.0.0.1:1080
+[core]
+	excludesfile = ~/.gitignore_global

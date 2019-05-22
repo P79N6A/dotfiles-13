@@ -10,15 +10,14 @@ sudo apt update &&
     sudo apt -y autoremove &&
     sudo apt -y install git mosh tmux zsh vim curl jq\
         python3 python-pip python3-pip virtualenv \
-        ipython ipython3 \
         silversearcher-ag
 
 # language
 sudo apt install -y language-pack-zh-hant-base language-pack-zh-hans-base
 
 # pip
-sudo pip2 install --upgrade pip requests
-sudo pip3 install --upgrade pip requests
+sudo pip3 install --upgrade pip requests ipython
+sudo pip2 install --upgrade pip requests ipython
 # if pip error after
 # sudo python -m pip uninstall pip && sudo apt install python-pip --reinstall
 # sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstall

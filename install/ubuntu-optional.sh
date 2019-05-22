@@ -97,6 +97,12 @@ elif [[ ${app} == "qt5" ]]; then
     # http://download.qt.io/archive/qt/5.12/5.12.3/
     # https://mirrors.tuna.tsinghua.edu.cn/qt/archive/qt/5.12/5.12.3/
 
+elif [[ ${app} == "yarn" ]]; then
+    # https://yarnpkg.com/zh-Hans/docs/install#debian-stable
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt update && sudo apt -y install yarn
+
 else
     echo "Nothing to be install"
 fi

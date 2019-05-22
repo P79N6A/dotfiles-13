@@ -675,5 +675,9 @@
         "key": "ctrl+l",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "workbench.action.closeOtherEditors"
     }
 ]

@@ -89,6 +89,8 @@
     // git
     "git.autofetch": false,
 
+    // yaml
+    "yaml.format.enable": true,
 
     // execlude file
     "files.exclude": {
@@ -102,5 +104,4 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
-    "yaml.format.enable": true,
 }

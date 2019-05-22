@@ -23,15 +23,6 @@
         ],
         "description": "std cout"
     },
-    "test": {
-        "prefix": "test",
-        "body": [
-            "#ifdef TEST",
-            "#include \"utils/define.h\"",
-            "#endif",
-        ],
-        "description": "for test"
-    },
     "gcd": {
         "prefix": "GCD",
         "body": [
@@ -55,8 +46,8 @@
         ],
         "description": "algorithm ln()"
     },
-    "test": {
-        "prefix": "TEST",
+    "acm_debug": {
+        "prefix": "acm_debug",
         "body": [
             "#ifdef TEST",
             "#include \"utils/define.h\"",
@@ -67,4 +58,16 @@
         ],
         "description": "for acm debug"
     },
+    "gtest": {
+        "prefix": "gtest",
+        "body": [
+            "#include <gtest/gtest.h>",
+            "int main(int argc, char* argv[]) {",
+            "",
+            "    testing::InitGoogleTest(&argc, argv);",
+            "    return RUN_ALL_TESTS();",
+            "}"
+        ],
+        "description": "for google-test"
+    }
 }
