@@ -38,6 +38,10 @@ alias chx='chmod +x'
 
 alias t='tail -f'
 
+alias codeserver="code-server -H -N -p 3020 -h 0.0.0.0"
+
+alias test_http_proxy="http_proxy=http://localhost:1090 curl www.google.com"
+
 if [[ "$(uname)" == "Darwin" ]]; then
     alias rm='rmtrash'
 fi

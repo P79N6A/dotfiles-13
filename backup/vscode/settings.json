@@ -8,8 +8,7 @@
     "editor.renderWhitespace": "all",
     "files.autoSave": "afterDelay",
     "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "editor.detectIndentation": false, // 关闭自动探测使用tab还是空格
+    "files.trimTrailingWhitespace": true, // 关闭自动探测使用tab还是空格
     "files.insertFinalNewline": true,
     "editor.mouseWheelZoom": true, // 鼠标滚动调整字体大小
 
@@ -19,13 +18,10 @@
     "editor.fontSize": 22,
     "editor.fontWeight": "500",
     "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+    "debug.console.fontFamily": "Ubuntu Mono derivative Powerline",
     "terminal.integrated.fontSize": 20,
     "terminal.integrated.fontWeight": "500",
     "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
-
-    // For proxy
-    "http.proxyStrictSSL": false,
-    "http.proxySupport": "off",
 
     // For window show
     "window.zoomLevel": 1.1,
@@ -33,6 +29,15 @@
     "explorer.openEditors.visible": 0,
     "window.menuBarVisibility": "default",
     "breadcrumbs.enabled": true, //编辑器上方有个导航栏
+    "editor.detectIndentation": false,
+    "editor.maxTokenizationLineLength": 2000,
+    "editor.renderControlCharacters": true,
+    "editor.renderLineHighlight": "all",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.tree.indent": 14,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "editor.showFoldingControls": "always",
+
 
     // https://code.visualstudio.com/docs/languages/identifiers
     "files.associations": {
@@ -87,7 +92,7 @@
     "leetcode.defaultLanguage": "cpp",
 
     // git
-    "git.autofetch": false,
+    "git.autofetch": true,
 
     // yaml
     "yaml.format.enable": true,
@@ -97,11 +102,20 @@
         "**/__pycache__": true
     },
 
+    // terminal
+    "terminal.explorerKind": "external",
+    "terminal.external.linuxExec": "tilix",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.shell.osx": "/usr/bin/zsh",
+
     // others
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "terminal.integrated.shell.osx": "/usr/bin/zsh",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
+    "files.autoGuessEncoding": true,
+    "search.useGlobalIgnoreFiles": true,
+    // https://github.com/Microsoft/vscode-python/issues/3785
+    "python.dataScience.jupyterServerURI": "http://39.106.34.109:3060/?token=notebook-token",
+
 }

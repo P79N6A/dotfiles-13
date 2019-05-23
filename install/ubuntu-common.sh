@@ -3,7 +3,7 @@
 # remove
 sudo apt purge rhythmbox* firefox* \
     gnome-sudoku gnome-mines gnome-mahjongg gnome-todo* gnome-2048* gnome-maps \
-    simple-scan aisleriot totem cheese
+    simple-scan aisleriot totem cheese zip
 
 sudo apt update &&
     sudo apt -y dist-upgrade &&

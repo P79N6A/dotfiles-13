@@ -60,9 +60,9 @@ elif [[ ${app} == "netdata" ]]; then
     bash <(curl -Ss https://my-netdata.io/kickstart.sh)
 
 elif [[ ${app} == "code-server" ]]; then
-    wget -qO- -t1 -T2 https://api.github.com/repos/codercom/code-server/releases/latest \
-        | jq '.assets[] | .browser_download_url' | grep linux \
-        | xargs wget -P $HOME/.local/bin
+    wget -qO- -t1 -T2 https://api.github.com/repos/codercom/code-server/releases/latest |
+        grep -oE "https://github.com/cdr/code-server/releases/download.*linux-x64.tar.gz" |
+        xargs curl -OL
 
 elif [[ ${app} == "qmmp" ]]; then
     sudo add-apt-repository ppa:forkotov02/ppa
@@ -96,12 +96,17 @@ elif [[ ${app} == "go" ]]; then
 elif [[ ${app} == "qt5" ]]; then
     # http://download.qt.io/archive/qt/5.12/5.12.3/
     # https://mirrors.tuna.tsinghua.edu.cn/qt/archive/qt/5.12/5.12.3/
+    echo "Not complete !"
 
 elif [[ ${app} == "yarn" ]]; then
     # https://yarnpkg.com/zh-Hans/docs/install#debian-stable
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt update && sudo apt -y install yarn
+
+elif [[ ${app} == "miniconda" ]]; then
+    # https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html#installing-on-linux
+    echo "Not complete !"
 
 else
     echo "Nothing to be install"
