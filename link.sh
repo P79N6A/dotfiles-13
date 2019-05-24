@@ -17,4 +17,5 @@ for x in ${names[@]}; do
     fi
 done
 
+ln -sf $DOT_PATH/core/.ssh $HOME/.ssh
 echo "link success!"
