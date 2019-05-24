@@ -20,4 +20,3 @@ Use out of box: git@github.com:scomper/Rime.git
 - ImageMagick
 - httpie
 - ng
-- fzf

@@ -1,6 +1,6 @@
 {
     // For editer
-    "editor.cursorStyle":"line",
+    "editor.cursorStyle": "line",
     "editor.cursorWidth": 4,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": true,
@@ -38,7 +38,6 @@
     "workbench.view.alwaysShowHeaderActions": true,
     "editor.showFoldingControls": "always",
 
-
     // https://code.visualstudio.com/docs/languages/identifiers
     "files.associations": {
         ".userrc": "shellscript"
@@ -55,6 +54,7 @@
     "C_Cpp.clang_format_fallbackStyle": "Google",
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "C_Cpp.clang_format_sortIncludes": true,
+
     // "C_Cpp.intelliSenseEngine": "Disabled",
     "clangd.path": "clangd-8",
 
@@ -86,6 +86,8 @@
         "--style='{based_on_style: google, indent_width: 4}'"
     ],
     "python.workspaceSymbols.enabled": false,
+    // https://github.com/Microsoft/vscode-python/issues/3785#issuecomment-466216795 about jupyter token
+    "python.dataScience.jupyterServerURI": "http://39.106.34.109:3060/?token=notebook-token",
 
     // leetcode
     "leetcode.endpoint": "leetcode-cn",
@@ -99,7 +101,8 @@
 
     // execlude file
     "files.exclude": {
-        "**/__pycache__": true
+        "**/__pycache__": true,
+        "node_modules": true
     },
 
     // terminal
@@ -115,7 +118,4 @@
     "extensions.ignoreRecommendations": true,
     "files.autoGuessEncoding": true,
     "search.useGlobalIgnoreFiles": true,
-    // https://github.com/Microsoft/vscode-python/issues/3785
-    "python.dataScience.jupyterServerURI": "http://39.106.34.109:3060/?token=notebook-token",
-
 }

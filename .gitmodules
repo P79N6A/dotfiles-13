@@ -10,3 +10,6 @@
 [submodule "backup/zsh-custom/plugins/zsh-blade"]
 	path = backup/zsh-custom/plugins/zsh-blade
 	url = git@github.com:icecory/zsh-blade.git
+[submodule "core"]
+	path = core
+	url = git@github.com:icecory/core.git

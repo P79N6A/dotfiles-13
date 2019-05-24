@@ -4,10 +4,10 @@ function backup_mongodb() {
     echo "start to dump mongodb!"
     now=`date +%Y-%m-%d`
     mongodump \
-        -h 39.106.34.109:3040 \
-        -u mongodb \
-        -p mongodb2333 \
-        -d icecory \
+        -h ${REMOTE_MONGO_DB_PATH} \
+        -u ${REMOTE_MONGO_DB_USRENAME} \
+        -p ${REMOTE_MONGO_DB_PASSWORD} \
+        -d ${REMOTE_MONGO_DB_DBNAME} \
         --authenticationDatabase admin \
         -o db-dump-${now}
 
