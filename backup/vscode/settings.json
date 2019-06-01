@@ -104,6 +104,7 @@
         "**/__pycache__": true,
         "node_modules": true
     },
+    "search.useGlobalIgnoreFiles": true,
 
     // terminal
     "terminal.explorerKind": "external",
@@ -116,6 +117,4 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "extensions.ignoreRecommendations": true,
-    "files.autoGuessEncoding": true,
-    "search.useGlobalIgnoreFiles": true,
 }
