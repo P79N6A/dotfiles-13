@@ -16,6 +16,7 @@ alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
 
+
 # http://www.lostsaloon.com/technology/how-to-sort-du-command-output-by-size-in-linux/
 alias dudir="du -ahd1 | sort -h"
 
@@ -39,6 +40,8 @@ alias chx='chmod +x'
 alias t='tail -f'
 
 alias codeserver="code-server -H -N -p 3020 -h 0.0.0.0"
+
+alias dco=docker-compose
 
 alias test_http_proxy="http_proxy=http://localhost:1090 curl www.google.com"
 

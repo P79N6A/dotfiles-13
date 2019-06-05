@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-names=('.zshrc' '.clang-format' '.gitconfig')
+names=('.zshrc' '.clang-format' '.gitconfig' '.style.yapf')
 
 for x in ${names[@]}; do
     file=$HOME/${x}

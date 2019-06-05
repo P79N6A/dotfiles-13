@@ -108,6 +108,10 @@ elif [[ ${app} == "miniconda" ]]; then
     # https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html#installing-on-linux
     echo "Not complete !"
 
+elif [[ ${app} == "ack" ]]; then
+    # https://beyondgrep.com/install/
+    curl https://beyondgrep.com/ack-v3.0.0 > $HOME/.local/bin/ack && chmod 0755 $HOME/.local/bin/ack
+
 else
     echo "Nothing to be install"
 fi
