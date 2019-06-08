@@ -14,7 +14,7 @@ function do-tilix() {
         dconf load /com/gexperts/Tilix/ <${abs_path}/tilix.dconf
 
     else
-        echo "Nothing to be done!"
+        echo 'Nothing to be done!'
     fi
 }
 

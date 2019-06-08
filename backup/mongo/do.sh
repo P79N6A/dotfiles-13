@@ -25,7 +25,7 @@ function do-mongo() {
             --authenticationDatabase admin
 
     else
-        echo "Nothing to be done!"
+        echo 'Nothing to be done!'
     fi
 }
 

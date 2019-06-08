@@ -35,7 +35,7 @@ function do-github() {
             --private $(: include private repositories) \
             $(: -F, --fork include forked repositories)
     else
-        echo "Nothing to be done!"
+        echo 'Nothing to be done!'
     fi
 }
 

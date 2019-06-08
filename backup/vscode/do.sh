@@ -18,7 +18,7 @@ function do-vscode() {
         echo "start to dump extensions to ${abs_path}"
         code --list-extensions > ${abs_path}/list-extensions.txt
     else
-        echo "Nothing to be done, please input [link]"
+        echo 'Nothing to be done!'
     fi
 }
 
