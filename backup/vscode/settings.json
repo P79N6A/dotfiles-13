@@ -85,7 +85,7 @@
     "python.formatting.yapfArgs": [],
     "python.workspaceSymbols.enabled": false,
     // https://github.com/Microsoft/vscode-python/issues/3785#issuecomment-466216795 about jupyter token
-    "python.dataScience.jupyterServerURI": "http://39.106.34.109:3060/?token=notebook-token",
+    "python.dataScience.jupyterServerURI": "https://jupyter.icecory.com/?token=notebook-token",
 
     // leetcode
     "leetcode.endpoint": "leetcode-cn",

@@ -24,55 +24,6 @@ function update_git_unshallow() {
     git fetch --unshallow
 }
 
-function use_global_http_proxy() {
-    if [[ "$1" == "on" ]]; then
-        echo "Http proxy port :${HTTP_PROXY_PORT}"
-        export http_proxy=http://127.0.0.1:${HTTP_PROXY_PORT}
-        export https_proxy=http://127.0.0.1:${HTTP_PROXY_PORT}
-    elif [[ "$1" == "off" ]]; then
-        echo "unset http_proxy"
-        unset http_proxy
-        unset https_proxy
-    else
-        echo "Nothing to be done, please input [on/off]"
-    fi
-}
-
-function use_snap_proxy() {
-    if [[ "$1" == "on" ]]; then
-        echo "set snap proxy"
-        sudo snap set system proxy.https=http://127.0.0.1:${HTTP_PROXY_PORT}
-        sudo snap set system proxy.http=http://127.0.0.1:${HTTP_PROXY_PORT}
-    elif [[ "$1" == "off" ]]; then
-        echo "unset snap proxy"
-        sudo snap set system proxy.http=null
-        sudo snap set system proxy.https=null
-    else
-        echo "Nothing to be done, please input [on/off]"
-    fi
-}
-
-function use_git_proxy() {
-    if [[ "$1" == "on" ]]; then
-        if [[ "$2" == "socks" ]]; then
-            echo "git use socks5 proxy"
-            git config --global http.proxy 'socks5://127.0.0.1:1080'
-            git config --global https.proxy 'socks5://127.0.0.1:1080'
-        elif [[ "$2" == "http" ]]; then
-            echo "git use http proxy"
-            git config --global http.proxy http://127.0.0.1:${HTTP_PROXY_PORT}
-            git config --global https.proxy http://127.0.0.1:${HTTP_PROXY_PORT}
-        else
-            echo "please select proxy type [http/socks]"
-        fi
-    elif [[ "$1" == "off" ]]; then
-        echo "git unset proxy"
-        git config --global --unset http.proxy
-        git config --global --unset https.proxy
-    else
-        echo "Nothing to be done, please input [on/off]"
-    fi
-}
 
 function use_tuna_mirror() {
     # https://mirror.tuna.tsinghua.edu.cn/help/ubuntu/

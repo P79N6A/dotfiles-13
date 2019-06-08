@@ -20,3 +20,15 @@ Use out of box: git@github.com:scomper/Rime.git
 - ImageMagick
 - httpie
 - ng
+
+
+## Function
+
+- do-status
+- do-albert [link]
+- do-github
+- do-hosts
+- do-mongo
+- do-tilix
+- do-code
+- do-proxy

@@ -112,6 +112,9 @@ elif [[ ${app} == "ack" ]]; then
     # https://beyondgrep.com/install/
     curl https://beyondgrep.com/ack-v3.0.0 > $HOME/.local/bin/ack && chmod 0755 $HOME/.local/bin/ack
 
+elif [[ ${app} == "meson" ]]; then
+    pip3 install meson --user
+
 else
     echo "Nothing to be install"
 fi

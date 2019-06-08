@@ -81,13 +81,14 @@ unset __conda_setup
 source $DOT_PATH/script/functions.sh
 source $DOT_PATH/script/aliases.sh
 
-source $DOT_PATH/backup/tilix/option.sh
-source $DOT_PATH/backup/vscode/option.sh
-source $DOT_PATH/backup/mongodb/option.sh
-source $DOT_PATH/backup/github/option.sh
-source $DOT_PATH/backup/albert/option.sh
 
-source $DOT_PATH/backup/vim/conf.sh
-source $DOT_PATH/backup/tmux/conf.sh # must after zsh plugin load
-source $DOT_PATH/backup/pip/conf.sh
-source $DOT_PATH/backup/jupyter/conf.sh
+source $DOT_PATH/backup/albert/do.sh
+source $DOT_PATH/backup/github/do.sh
+source $DOT_PATH/backup/hosts/do.sh
+source $DOT_PATH/backup/mongo/do.sh
+source $DOT_PATH/backup/pip/do.sh
+source $DOT_PATH/backup/proxy/do.sh
+source $DOT_PATH/backup/tilix/do.sh
+source $DOT_PATH/backup/tmux/do.sh
+source $DOT_PATH/backup/vim/do.sh
+source $DOT_PATH/backup/vscode/do.sh

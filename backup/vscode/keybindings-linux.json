@@ -679,5 +679,13 @@
     {
         "key": "shift+alt+w",
         "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
     }
 ]
