@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-function do-mongodb() {
+function do-mongo() {
     if [[ $1 == "dump" ]]; then
-        echo "start to dump mongodb! in ${REMOTE_MONGO_DB_PATH}"
+        echo "start to dump mongo db! in ${REMOTE_MONGO_DB_PATH}"
         now=$(date +%Y-%m-%d)
         mongodump \
             -h ${REMOTE_MONGO_DB_PATH} \
@@ -25,6 +25,11 @@ function do-mongodb() {
             --authenticationDatabase admin
 
     else
-        echo "Nothing to be done, please input [dump]"
+        echo "Nothing to be done!"
     fi
 }
+
+function _do-mongo() {
+    _alternative 'args:custom arg:((dump\:"dump mongo db" login\:"login mongo db"))'
+}
+compdef _do-mongo do-mongo

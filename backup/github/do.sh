@@ -30,11 +30,17 @@ function do-github() {
             --wikis $(: include wiki clone in backup) \
             --gists $(: include gists in backup) \
             $(: --starred-gists include starred gists in backup) \
-            --skip-existing $(: skip project if a backup directory exists) \
+            --skip-existing $(: skip project \if a backup directory exists) \
             $(: -O, --organization whether or not this is an organization user) \
             --private $(: include private repositories) \
             $(: -F, --fork include forked repositories)
     else
-        echo "Nothing to be done, please input [backup]"
+        echo "Nothing to be done!"
     fi
 }
+
+function _do-github() {
+    _alternative \
+        'args:custom arg:((backup\:"backup github all repos" none\:"none"))'
+}
+compdef _do-github do-github

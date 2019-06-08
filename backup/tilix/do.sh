@@ -14,6 +14,11 @@ function do-tilix() {
         dconf load /com/gexperts/Tilix/ <${abs_path}/tilix.dconf
 
     else
-        echo "Nothing to be done, please input [dump/load]"
+        echo "Nothing to be done!"
     fi
 }
+
+function _do-tilix() {
+    _alternative 'args:custom arg:((dump\:"dump tilix config" load\:"load tilix config"))'
+}
+compdef _do-tilix do-tilix

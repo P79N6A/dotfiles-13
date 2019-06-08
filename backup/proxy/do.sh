@@ -21,6 +21,11 @@ function do-proxy-git() {
     fi
 }
 
+function _do-proxy-git() {
+    _alternative 'args:custom arg:((set-http\:"" set-socks\:"" reset\:""))'
+}
+compdef _do-proxy-git do-proxy-git
+
 function do-proxy-env() {
     if [[ $1 == "set" ]]; then
         echo "set env http_proxy on port[${HTTP_PROXY_PORT}]"
@@ -34,7 +39,6 @@ function do-proxy-env() {
         echo "Nothing to be done!"
     fi
 }
-
 
 function do-proxy-snap() {
     if [[ "$1" == "set" ]]; then
@@ -51,3 +55,8 @@ function do-proxy-snap() {
         echo "Nothing to be done!"
     fi
 }
+
+function _do-proxy-common() {
+    _alternative 'args:custom arg:((set\:"set http proxy" reset\:"reset proxy config"))'
+}
+compdef _do-proxy-common do-proxy-env do-proxy-snap

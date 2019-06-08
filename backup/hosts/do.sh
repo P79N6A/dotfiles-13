@@ -13,7 +13,7 @@ function do-hosts (){
     elif [[ $1 == "reset" ]]; then
 
     else
-        echo "Nothing to be done, please input [set/reset]"
+        echo "Nothing to be done!"
     fi
 
     # for win
@@ -21,3 +21,9 @@ function do-hosts (){
     # for mac
     # sudo killall -HUP mDNSResponder
 }
+
+function _do-hosts() {
+    _alternative \
+        'args:custom arg:((set\:"write google-hosts to /etc/hosts" reset\:"reset /etc/hosts"))'
+}
+compdef _do-hosts do-hosts

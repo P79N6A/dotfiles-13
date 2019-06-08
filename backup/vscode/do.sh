@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 abs_path=$(cd "$(dirname "$0")"; pwd)
+
 target_prefix=$HOME/.config
 if [[ "$(uname)" == "Darwin" ]]; then
     target_prefix=$HOME/Library/Application\ Support
@@ -20,3 +21,8 @@ function do-vscode() {
         echo "Nothing to be done, please input [link]"
     fi
 }
+
+function _do-vscode() {
+    _alternative 'args:custom arg:((link\:"link to ${target_prefix}/Code/User" dump-ext\:"dump extensions list"))'
+}
+compdef _do-vscode do-vscode
