@@ -10,6 +10,7 @@ foxundermoon.shell-format
 kenhowardpdx.vscode-gist
 liximomo.sftp
 llvm-vs-code-extensions.vscode-clangd
+lonefy.vscode-JS-CSS-HTML-formatter
 ms-azuretools.vscode-cosmosdb
 MS-CEINTL.vscode-language-pack-zh-hans
 ms-python.python
@@ -19,6 +20,7 @@ PeterJausovec.vscode-docker
 redhat.vscode-yaml
 shengchen.vscode-leetcode
 sysoev.language-stylus
+thisismanta.stylus-supremacy
 twxs.cmake
 vector-of-bool.cmake-tools
 VisualStudioExptTeam.vscodeintellicode

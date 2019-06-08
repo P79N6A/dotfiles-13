@@ -1,9 +1,5 @@
 [user]
-	name = iceCory
-	email = icecory520@gmail.com
-[http]
-	proxy = socks5://127.0.0.1:1081
-[https]
-	proxy = socks5://127.0.0.1:1080
+	name = liqiming.icecory
+	email = liqiming.icecory@bytedance.com
 [core]
 	excludesfile = ~/.gitignore_global

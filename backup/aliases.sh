@@ -6,16 +6,15 @@ alias j=z
 alias zrc="vi $HOME/.zshrc"
 
 # ls, the common ones I use a lot shortened for rapid fire usage
-alias l='ls -lAFh'    # size,show type,human readable
-alias la='ls -lAFh'   # long list,show almost all,show type,human readable
-alias lr='ls -tRFh'   # sorted by date,recursive,show type,human readable
-alias lt='ls -ltFh'   # long list,sorted by date,show type,human readable
-alias ll='ls -l'      # long list
+alias l='ls -lAFh'  # size,show type,human readable
+alias la='ls -lAFh' # long list,show almost all,show type,human readable
+alias lr='ls -tRFh' # sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh' # long list,sorted by date,show type,human readable
+alias ll='ls -l'    # long list
 alias ldot='ls -ld .*'
 alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
-
 
 # http://www.lostsaloon.com/technology/how-to-sort-du-command-output-by-size-in-linux/
 alias dudir="du -ahd1 | sort -h"
@@ -39,11 +38,15 @@ alias chx='chmod +x'
 
 alias t='tail -f'
 
+alias env='env | sort'
+
 alias codeserver="code-server -H -N -p 3020 -h 0.0.0.0"
 
 alias dco=docker-compose
 
-alias test_http_proxy="http_proxy=http://localhost:1090 curl www.google.com"
+alias gcbt='git clone git@code.byted.org:'
+alias gchb='git clone git@github.com:'
+alias gchbi='git clone git@github.com:icecory/'
 
 if [[ "$(uname)" == "Darwin" ]]; then
     alias rm='rmtrash'

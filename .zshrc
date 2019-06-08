@@ -21,7 +21,7 @@ export SOCKS_PROXY_PORT_ALI=1081
 export HTTP_PROXY_PORT=1090
 
 #####################    For Self info     #####################
-source $DOT_PATH/core/core_env.sh
+source $DOT_PATH/core/info.sh
 
 #####################    For Zsh     #####################
 export ZSH=$HOME/.oh-my-zsh
@@ -42,9 +42,6 @@ export ANDROID_HOME=$HOME/Andriod-SDK-tools/
 export PATH=$HOME/Andriod-SDK-tools/bin:$PATH
 export PATH=$HOME/flutter/bin/cache/dart-sdk/bin:$PATH
 export PATH=$HOME/flutter/bin:$PATH
-
-##################       For npm        #####################
-export NPM_CONFIG_PREFIX=$HOME/.npm-global
 
 ##################       For Go        ######################
 # if [[ "$(uname)" == "Darwin" ]]; then
@@ -74,20 +71,20 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
 
 
-
-source $DOT_PATH/script/functions.sh
-source $DOT_PATH/script/aliases.sh
-
+source $DOT_PATH/backup/aliases.sh
+source $DOT_PATH/backup/functions.sh
 
 source $DOT_PATH/backup/albert/do.sh
+source $DOT_PATH/backup/git/do.sh
 source $DOT_PATH/backup/github/do.sh
 source $DOT_PATH/backup/hosts/do.sh
 source $DOT_PATH/backup/mongo/do.sh
+source $DOT_PATH/backup/npm/do.sh
 source $DOT_PATH/backup/pip/do.sh
 source $DOT_PATH/backup/proxy/do.sh
+source $DOT_PATH/backup/shadowsocks/do.sh
 source $DOT_PATH/backup/tilix/do.sh
 source $DOT_PATH/backup/tmux/do.sh
 source $DOT_PATH/backup/vim/do.sh
